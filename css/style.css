@@ -27,8 +27,8 @@ body .header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url("/img/fon.png");
-  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("/img/fon.png");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(11.98%, #242b33), color-stop(51.04%, rgba(45, 52, 60, 0.38)), color-stop(92.19%, #242b33)), url(/img/fon.png);
+  background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(/img/fon.png);
   position: absolute;
   height: -webkit-fill-available;
   -webkit-box-flex: 0;
