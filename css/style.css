@@ -538,14 +538,18 @@ body .footer .base {
     margin-top: 38% !important;
   }
   .sale_title {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 20px !important;
+    line-height: 32px !important;
     margin-top: 10%;
   }
   .text_h3 {
-    font-size: 20px;
-    line-height: 48px;
+    font-size: 20px !important;
+    line-height: 48px !important;
     margin-top: 8%;
+  }
+  .text_p {
+    max-width: 100%;
+    font-size: 10px !important;
   }
   .google_map {
     width: 100%;
@@ -560,21 +564,24 @@ body .footer .base {
     height: auto;
   }
   .text-left {
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 64px;
     margin-left: 13%;
-    margin-top: 20%;
+    margin-top: 30%;
   }
   .adress {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .telephon_ {
-    font-size: 10px;
+    font-size: 10px !important;
+  }
+  .nav_item {
+    font-size: 10px !important;
   }
   .play_button {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 10% !important;
+    height: 10% !important;
   }
   .sale {
     margin-left: 1%;
@@ -588,6 +595,10 @@ body .footer .base {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .img-sm {
+    width: 30%;
+    height: 30%;
   }
 }
 
@@ -610,8 +621,8 @@ body .footer .base {
     margin-top: 50% !important;
   }
   .sale_title {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 20px !important;
+    line-height: 32px !important;
     margin-top: 10%;
   }
   .mouse {
@@ -623,34 +634,42 @@ body .footer .base {
     margin-top: 35%;
   }
   .text_h3 {
-    font-size: 15px;
-    line-height: 48px;
+    font-size: 20px !important;
+    line-height: 48px !important;
     margin-top: 8%;
   }
   .text_p {
     max-width: 100%;
+    font-size: 10px !important;
+  }
+  .img-sm {
+    width: 30%;
+    height: 30%;
   }
   .video {
-    margin-top: 90%;
+    margin-top: 30%;
     width: 100%;
     height: auto;
   }
   .text-left {
-    font-size: 15px;
+    font-size: 20px !important;
     line-height: 64px;
     margin-left: 13%;
     margin-top: 30%;
   }
   .adress {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .telephon_ {
-    font-size: 10px;
+    font-size: 10px !important;
+  }
+  .nav_item {
+    font-size: 10px !important;
   }
   .play_button {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 10% !important;
+    height: 10% !important;
   }
   .sale {
     margin-left: 1%;
