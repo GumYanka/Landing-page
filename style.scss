@@ -1,0 +1,618 @@
+$accent: #d4c17f;
+$dark: #242b33;
+$input: #ffffff;
+$map: #626262;
+$footer: #2d343c;
+$white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  align-content: flex-end;
+  .header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background: linear-gradient(
+        180deg,
+        #242b33 11.98%,
+        rgba(45, 52, 60, 0.38) 51.04%,
+        #242b33 92.19%
+      ),
+      url("/css/img/fon.png");
+    position: absolute;
+    height: -webkit-fill-available;
+    flex: 0 0 auto;
+    width: 100%;
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .nav {
+        @extend .flex-center;
+        list-style-type: none;
+        color: $white;
+        font-size: 14px;
+        flex-wrap: wrap;
+        .nav_item {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      position: relative;
+      @extend .flex-center;
+      align-items: center;
+      margin-top: 10%;
+      flex-direction: column;
+
+      .sale_title {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 64px;
+        text-align: center;
+        color: $accent;
+        margin-top: 8%;
+        .mouse {
+          padding-top: 1%;
+        }
+      }
+    }
+    .placeholder-telephon {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 13%;
+      flex-wrap: wrap;
+      .placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        .icon-placeholder {
+          margin: 1rem;
+        }
+        .anim {
+          animation-duration: 5s;
+          animation-name: slidein;
+        }
+        .adress {
+          @extend .a;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+      .telephon {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .icon-telephon {
+          margin: 1rem;
+        }
+        .anim {
+          animation-duration: 5s;
+          animation-name: slidein;
+        }
+        .telephon_ {
+          @extend .a;
+          font-size: 16px;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .first-screen {
+    background: $dark;
+    .testimonials {
+      @extend .flex-center;
+      margin-top: 10%;
+      flex-wrap: wrap;
+      align-items: baseline;
+      .icon_testimonials {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+        width: min-content;
+        .roboto-300 {
+          color: $white;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 27px;
+          text-align: center;
+        }
+      }
+    }
+    .text_h3 {
+      color: $accent;
+      margin-top: 3rem;
+      margin-left: 13%;
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      margin-top: 8%;
+    }
+    .two_column {
+      flex-wrap: wrap;
+      @extend .flex-center;
+      .four_foto {
+        @extend .foto-size;
+        background: linear-gradient(
+            180deg,
+            #242b33 0%,
+            rgba(36, 43, 51, 0) 0.01%,
+            #242b33 100%
+          ),
+          url("/css/img/Rectangle3.png"), #d4c17f;
+      }
+      .one_foto {
+        position: relative;
+        cursor: pointer;
+        @extend .foto-size;
+        background: linear-gradient(
+            180deg,
+            rgba(36, 43, 51, 0) 0%,
+            #242b33 100%
+          ),
+          url("/css/img/Rectangle4.png"), #d4c17f;
+      }
+      .two_foto {
+        @extend .foto-size;
+        background: linear-gradient(
+            180deg,
+            #242b33 0%,
+            rgba(36, 43, 51, 0) 0.01%,
+            #242b33 100%
+          ),
+          url("/css/img/Rectangle3.png"), #d4c17f;
+      }
+
+      .three_foto {
+        @extend .foto-size;
+        background: linear-gradient(
+            180deg,
+            rgba(36, 43, 51, 0) 0%,
+            #242b33 100%
+          ),
+          url("/css/img/Rectangle4.png"), #d4c17f;
+      }
+      .roboto-300 {
+        color: $white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+      }
+    }
+
+    .two_column p {
+      line-height: 1.4;
+      opacity: 0;
+      transform: translateY(110%);
+      transition: 0.5s 0.4s;
+    }
+
+    .two_column:hover p {
+      transform: translate(0);
+      opacity: 1;
+      margin: 2%;
+    }
+  }
+  .cta {
+    background-image: url("/css/img/7.png");
+    position: relative;
+    height: 560px;
+    .sale_title {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 64px;
+      text-align: center;
+      color: $accent;
+      margin-top: 8%;
+    }
+    .text_p {
+      @extend .a;
+      max-width: 40%;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .base {
+      @extend .a;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .see {
+      width: 255px;
+      height: 50px;
+      background: $accent;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 27px;
+      text-align: center;
+      color: $white;
+    }
+    .your_name {
+      width: 255px;
+      height: 50px;
+      opacity: 0.2;
+      font-size: 14px;
+      line-height: 27px;
+      @extend .a;
+      text-align: center;
+      border-bottom: none;
+    }
+  }
+  .maps {
+    background: $dark;
+    .video_button {
+      @extend .flex-center;
+      align-items: center;
+      margin-top: 5%;
+      .play_button {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+      .video {
+        position: relative;
+        height: 650px;
+        // width: -webkit-fill-available;
+        background: linear-gradient(
+            0deg,
+            rgba(36, 43, 51, 0.8),
+            rgba(36, 43, 51, 0.8)
+          ),
+          url("/img/Rectangle2.png"), #626262;
+      }
+    }
+    .sale_title {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 64px;
+      text-align: center;
+      color: $accent;
+      margin-top: 8%;
+    }
+    .map_div {
+      @extend .flex-center;
+      height: 15rem;
+      background: #626262;
+      align-items: center;
+    }
+    .text-left {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 64px;
+      margin-left: 13%;
+      color: $accent;
+      margin-top: 8%;
+    }
+    .question {
+      @extend .flex-center;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 8%;
+      .base {
+        @extend .a;
+        font-size: 13px;
+        line-height: 16px;
+      }
+      .see {
+        width: 255px;
+        height: 50px;
+        background: $accent;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: $white;
+      }
+      .your_name {
+        width: 255px;
+        height: 50px;
+        opacity: 0.2;
+        font-size: 14px;
+        line-height: 27px;
+        @extend .a;
+        text-align: center;
+        border-bottom: none;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    padding: 3%;
+    background: #2d343c;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .item {
+      list-style-type: none;
+      margin: 0.5em;
+    }
+    .base {
+      @extend .a;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}
+
+.a {
+  color: $white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.foto-size {
+  width: 535px;
+  height: 320px;
+  margin: 2%;
+}
+
+.flex-center {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .header {
+    height: 70%;
+  }
+
+  .google_map {
+    width: 100%;
+  }
+
+  .tit {
+    margin-top: 50% !important;
+  }
+
+  .sale_title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 10%;
+  }
+
+  .mouse {
+    padding-top: 1%;
+    width: 5%;
+    height: 5%;
+  }
+
+  .testimonials {
+    margin-top: 35%;
+  }
+
+  .text_h3 {
+    font-size: 20px;
+    line-height: 48px;
+    margin-top: 8%;
+  }
+
+  .text_p {
+    max-width: 100%;
+  }
+
+  .video {
+    margin-top: 30%;
+    width: -webkit-fill-available;
+    height: auto;
+  }
+
+  .text-left {
+    font-size: 20px;
+    line-height: 64px;
+    margin-left: 13%;
+    margin-top: 30%;
+  }
+
+  .adress {
+    font-size: 10px;
+  }
+
+  .telephon_ {
+    font-size: 10px;
+  }
+
+  .play_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .sale {
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 689px) {
+  .header {
+    height: 100%;
+  }
+
+  .tit {
+    margin-top: 38% !important;
+  }
+
+  .sale_title {
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-top: 10%;
+  }
+
+  .text_h3 {
+    font-size: 20px;
+    line-height: 48px;
+    margin-top: 8%;
+  }
+
+  .google_map {
+    width: 100%;
+  }
+
+  .testimonials {
+    margin-top: 40%;
+  }
+
+  .video {
+    margin-top: 1%;
+    width: -webkit-fill-available;
+    height: auto;
+  }
+
+  .text-left {
+    font-size: 20px;
+    line-height: 64px;
+    margin-left: 13%;
+    margin-top: 20%;
+  }
+
+  .adress {
+    font-size: 10px;
+  }
+
+  .telephon_ {
+    font-size: 10px;
+  }
+
+  .play_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .sale {
+    margin-left: 1%;
+  }
+
+  .title {
+    margin-top: 45%;
+  }
+}
+
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .header {
+    height: 100%;
+  }
+
+  .testimonials {
+    margin-top: 40%;
+  }
+
+  .text-left {
+    margin-top: 18%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .sale {
+    margin-left: 13%;
+  }
+  .header {
+    height: 88%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sale {
+    margin-left: 13%;
+  }
+
+  .header {
+    height: 100%;
+  }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: $accent;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
