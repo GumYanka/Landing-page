@@ -170,7 +170,7 @@ body {
             rgba(36, 43, 51, 0) 0.01%,
             #242b33 100%
           ),
-          url("/img/Rectangle3.png"), #d4c17f;
+          url(img\Rectangle3.png), #d4c17f;
       }
       .one_foto {
         position: relative;
@@ -181,7 +181,7 @@ body {
             rgba(36, 43, 51, 0) 0%,
             #242b33 100%
           ),
-          url("/img/Rectangle4.png"), #d4c17f;
+          url(img\Rectangle4.png), #d4c17f;
       }
       .two_foto {
         @extend .foto-size;
@@ -191,7 +191,7 @@ body {
             rgba(36, 43, 51, 0) 0.01%,
             #242b33 100%
           ),
-          url("/img/Rectangle3.png"), #d4c17f;
+          url(img\Rectangle3.png), #d4c17f;
       }
 
       .three_foto {
@@ -201,7 +201,7 @@ body {
             rgba(36, 43, 51, 0) 0%,
             #242b33 100%
           ),
-          url("/img/Rectangle4.png"), #d4c17f;
+          url(img\Rectangle4.png), #d4c17f;
       }
       .roboto-300 {
         color: $white;
@@ -228,7 +228,7 @@ body {
     }
   }
   .cta {
-    background-image: url("/img/7.png");
+    background-image: url(img\7.png);
     position: relative;
     height: 560px;
     .sale_title {
@@ -295,7 +295,7 @@ body {
             rgba(36, 43, 51, 0.8),
             rgba(36, 43, 51, 0.8)
           ),
-          url("/img/Rectangle2.png"), #626262;
+          url(img\Rectangle2.png), #626262;
       }
     }
     .sale_title {
